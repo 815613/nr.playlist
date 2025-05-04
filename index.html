@@ -2560,6 +2560,33 @@ input:checked + .slider:before {
         </div>
     </div>
 </div>
+
+		 <div class="audio-container">
+            <div class="custom-audio" id="customAudio55">
+                <div class="progress-container" onclick="seekAudio(event, 'audio56')">
+                    <div class="progress-bar" id="progressBar56"></div>
+                </div>
+                <div class="audio-controls">
+                    <div class="time-display" id="timeDisplay56">0:00 / 0:00</div>
+                    <div class="main-controls">
+                        <button class="control-btn" onclick="skipBackward('audio56')">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="control-btn" onclick="playPause('audio56')">
+                            <i class="fas fa-play" id="playPauseIcon56"></i>
+                        </button>
+                        <button class="control-btn" onclick="skipForward('audio56')">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <audio id="audio56" ontimeupdate="updateProgress('audio56')" onloadedmetadata="initAudio('audio56')">
+                <source src="https://github.com/fardinnuman/PLAYLIST/raw/refs/heads/main/Fakira.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+</div>
         </main>
 		
 				        <footer class="fade-in">
